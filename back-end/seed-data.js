@@ -1,14 +1,5 @@
-import pkg from "pg";
+import pool from "./config/db.js";
 import bcrypt from "bcrypt";
-const { Pool } = pkg;
-
-const pool = new Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "karigo",
-  password: "yhwh",
-  port: 5432,
-});
 
 const workerNames = [
   "Raj Kumar",
